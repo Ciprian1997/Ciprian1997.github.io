@@ -31,8 +31,8 @@ var friendEUR = 10;
 var friendRON = 0;
 // operatori * / + -
 
-myRON = myEUR * 4.7;
+myRON = myEUR * cursEUR;
 console.info("eu am " + myRON + "RON");
 
-friendRON = friendEUR * 4.7;
+friendRON = friendEUR * cursEUR;
 console.info("tu ai " + friendRON + "RON");
