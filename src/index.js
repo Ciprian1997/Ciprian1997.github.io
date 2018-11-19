@@ -1,17 +1,24 @@
+function hide(id) {
+  document.getElementById(id).style.display = "none";
+}
+function show(id) {
+  document.getElementById(id).style.display = "block";
+}
+
 function showHomePage(){
-  document.getElementById("home-page").style.display = "block";
-  document.getElementById("languages-page").style.display = "none";
-  document.getElementById("skills-page").style.display = "none";
+  show("home-page");
+  hide("languages-page");
+  hide("skills-page");
 }
 function showSkillsPage(){
-  document.getElementById("home-page").style.display = "none";
-  document.getElementById("languages-page").style.display = "none";
-  document.getElementById("skills-page").style.display = "block";
+  hide("home-page");
+  hide("languages-page");
+  show("skills-page");
 }
 function showLanguagesPage(){
-  document.getElementById("home-page").style.display = "none";
-  document.getElementById("languages-page").style.display = "block";
-  document.getElementById("skills-page").style.display = "none";
+  hide("home-page");
+  show("languages-page");
+  hide("skills-page");
 }
 document.getElementById("home-menu").onclick = showHomePage;
 document.getElementById("languages-menu").onclick = showLanguagesPage;
