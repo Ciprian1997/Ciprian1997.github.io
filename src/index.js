@@ -8,16 +8,13 @@ function show(id) {
   $(id).style.display = "block";
 }
 
-//$("home-menu").onclick = showHomePage;
-//$("languages-menu").onclick = showLanguagesPage;
-//$("skills-menu").onclick = showSkillsPage;
-//$("education-menu").onclick = showEducationPage;
+function hideElement(el) {
+  page.style.display = 'none'
+}
 
 function hideAllPages() {
   var pages = document.querySelectorAll(" .page-block");
-  for(var i = 0; i < pages.length; i++) {
-    pages[i].style.display = 'none';
-  }
+  pages.forEach(hideElement);
 }
 
 var links = document.querySelectorAll("top-menu-bar a");
