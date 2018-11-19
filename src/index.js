@@ -1,8 +1,12 @@
+function $(id){
+  return document.getElementById(id);
+
+}
 function hide(id) {
-  document.getElementById(id).style.display = "none";
+  $(id).style.display = "none";
 }
 function show(id) {
-  document.getElementById(id).style.display = "block";
+  $(id).style.display = "block";
 }
 
 function showHomePage(){
@@ -20,6 +24,6 @@ function showLanguagesPage(){
   show("languages-page");
   hide("skills-page");
 }
-document.getElementById("home-menu").onclick = showHomePage;
-document.getElementById("languages-menu").onclick = showLanguagesPage;
-document.getElementById("skills-menu").onclick = showSkillsPage;
+$("home-menu").onclick = showHomePage;
+$("languages-menu").onclick = showLanguagesPage;
+$("skills-menu").onclick = showSkillsPage;
