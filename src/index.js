@@ -8,32 +8,25 @@ function show(id) {
   $(id).style.display = "block";
 }
 
-function showHomePage(){
-  show("home-page");
-  hide("languages-page");
-  hide("skills-page");
-  hide("education-page");
-}
-function showSkillsPage(){
-  hide("home-page");
-  hide("languages-page");
-  show("skills-page");
-  hide("education-page");
-}
-function showEducationPage(){
-  hide("home-page");
-  hide("languages-page");
-  show("education-page");
-  hide("skills-page");
-}
-function showLanguagesPage(){
-  hide("home-page");
-  show("languages-page");
-  hide("skills-page");
-  hide("education-page");
+//$("home-menu").onclick = showHomePage;
+//$("languages-menu").onclick = showLanguagesPage;
+//$("skills-menu").onclick = showSkillsPage;
+//$("education-menu").onclick = showEducationPage;
+
+function hideAllPages() {
+  var pages = document.querySelectorAll(" .page-block");
+  for(var i = 0; i < pages.length; i++) {
+    pages[i].style.display = 'none';
+  }
 }
 
-$("home-menu").onclick = showHomePage;
-$("languages-menu").onclick = showLanguagesPage;
-$("skills-menu").onclick = showSkillsPage;
-$("education-menu").onclick = showEducationPage;
+var links = document.querySelectorAll("top-menu-bar a");
+for(var i = 0; i < links.length; i++) {
+  links[i].onclick = function(){
+    hideAllPages();
+    var page = this.getAttribute('data-page');
+    show(page + "-page");
+  };
+}
+
+
