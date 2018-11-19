@@ -33,7 +33,6 @@ function showLanguagesPage(){
   hide("education-page");
 }
 
-
 $("home-menu").onclick = showHomePage;
 $("languages-menu").onclick = showLanguagesPage;
 $("skills-menu").onclick = showSkillsPage;
