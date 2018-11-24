@@ -1,4 +1,4 @@
-function $(id){
+function $(id) {
   return document.getElementById(id);
 }
 function hide(id) {
@@ -9,7 +9,7 @@ function show(id) {
 }
 
 function hideElement(el) {
-  page.style.display = 'none'
+  el.style.display = 'none';
 }
 
 function hideAllPages() {

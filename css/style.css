@@ -1,12 +1,12 @@
-/* body {
-  background-color: gray;
-} */
+body {
+  background-color: #3eb4c4;
+} 
 
-.test1 {
+/*.test1 {
   border: 1px solid #000;
-  margin: 5px;
-  padding: 5px;
-}
+  margin: 2px;
+  padding: 2px;
+}*/
 
 #left-sidebar {
   float: left;
@@ -20,26 +20,19 @@
 
 #content {
   border-color: green;
-  padding-left: 35%;
+  padding-left: 30%;
 }
 
 .page-block {
   display: none;
-  background-color: rgb(200, 255, 255);
+  background-color: white;
   padding: 24px;
   margin: 10px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2pc 3px rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
-
-body {
-  background-color: rgb(201, 200, 255);
-}
-div {
-  background-color: white;
-  padding: 10px;
-  margin: 10px;
-  border: 1px solid #777777;
+#my-pcture {
+  border-radius: 50%;
 }
 #motto {
   color: darkgreen;
@@ -55,7 +48,7 @@ div {
   display: inline;
 }
 #top-menu-bar a {
-  padding: 5px 15px 10px 15px;
+  padding: 5px 15px 5px 15px;
   margin: 2px 0 2px 0;
   text-decoration: none;
   display: inline-block;
