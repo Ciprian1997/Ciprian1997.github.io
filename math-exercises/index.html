@@ -15,6 +15,7 @@
     <button onclick="multiplyNumbers()">Multiply</button>
     <button id="divideBtn">Divide</button>
     <button id="addBtn">Add</button>
+    <button id="downBtn">Down</button>
     <p>The Result Is:</p>
     <p id="result">-</p>
 
@@ -38,10 +39,17 @@
             var total = parseInt(a) + parseInt(b);
             result.innerHTML = total;
         }
+        function downNumbers(){
+            var a = firstNrInput.value;
+            var b = secondNrInput.value;
+            var total = parseInt(a) - parseInt(b);
+            result.innerHTML = total;
+        }
 
         var divideBtn = document.getElementById('divideBtn');
         divideBtn.onclick = divideNumbers;
         document.getElementById('addBtn');addBtn.onclick = addNumbers;
+        document.getElementById('downBtn');downBtn.onclick = downNumbers;
         
     </script>
         
